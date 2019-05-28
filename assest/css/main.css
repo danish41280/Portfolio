@@ -1,0 +1,243 @@
+body{
+	overflow-x: hidden;
+
+}
+.navbar{
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: black;
+	font-size: .9rem;
+}
+.navbar-brand img{
+	height: 2rem;
+}
+.navbar-nav li{
+	padding-right: .5rem;
+}
+.navbar-nav .nav-link{
+	color: white;
+	padding-top: .8rem;
+}
+.navbar-toggler span{
+	color: white;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+	color: gray;
+}
+
+/*---- landing page ----*/
+.fullscreen-video-wrap{
+	overflow: hidden;
+	max-height: 660px;
+}
+
+.overlay{
+	height: 660px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	z-index: 1;
+	opacity: 0.65;
+}
+
+.caption{
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	text-transform: uppercase;
+	color: white; 
+	top: 40%;
+	z-index: 1;
+}
+.caption h1{
+	font-size: 3.8rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow:  .1rem .1rem .9rem black;
+	padding-bottom: 1rem;
+}
+.caption h4{
+	font-size: 2rem;
+	text-shadow: .1rem .1rem .5rem black;
+}
+.btn-lg{
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+}
+ /* for about pages css */
+#about{
+	padding-top: 15%;
+}
+.container-fluid{
+	margin-bottom: 10%;
+}
+.bar{
+	display: block;
+	height: 2px;
+	border: 2px solid rgba(0,0,0,0.2);
+	border-radius: 3px;
+	box-shadow: 0 0 3px #2187e7b3;
+}
+.bar span{
+	height: 2px;
+	float: left;
+	background:gray;
+}
+.html{
+	width: 90%;
+	animation: html 4s;
+}
+.javascript{
+	width: 50%;
+	animation: javascript 4s;
+}
+.php{
+	width: 60%;
+	animation: php 4s;
+}
+.laravel{
+	width: 30%;
+	animation: laravel 4s;
+}
+@keyframes html{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 90%;
+	}
+}
+@keyframes javascript{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 50%;
+	}
+}
+@keyframes php{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 60%;
+	}
+}
+@keyframes laravel{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 30%;
+	}
+}
+/* service */
+ #services{
+ 	padding-top: 60px;
+ 	text-align: center;
+ 	background-color:#E1E1E1;
+ }
+
+#services h2,
+#services h4 {
+	color: black;
+	margin: 20px 0 20px;
+
+}
+#services p{
+	font-size: 14px;
+	padding-bottom: 180px;
+}
+#services i{
+	margin-top: 150px;
+	height: 80px;
+	width: 80px;
+	font-size: 30px;
+	color:#FF007F;
+
+}
+
+
+.background-image{
+	background: url('../img/background.jpg') fixed center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	width: 100%;
+}
+.background-image img{
+	margin :15px 10px;
+	width: 140px;
+	height: auto;
+	border-radius: 50%;
+	float: left;		
+}
+.background-image h1{
+	color: white;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: .2rem;
+	text-shadow:  .1rem .1rem .1rem blue;
+	float: left;
+	margin-top: 40px;
+
+}
+.Cv{
+	border-width: medium;
+	border-radius: 0;
+	padding: .6rem 1.3rem;
+	font-size: 1.1rem;
+	position: absolute;
+	left: 250px;
+	margin-top: 70px;
+	font-weight: 700;
+
+}
+@media (max-width: 650px){
+	.background-image h1{
+			font-size: 20px;
+
+	}
+}
+
+
+@media (min-width: 320px) and (max-width: 500px){
+	.background-image h1{
+			font-size: 10px;
+
+	}
+	.Cv{
+		font-size: 9px;
+
+	}
+
+}
+
+/* Portfolio */
+#portfolio{
+	padding-top: 90px;
+}
+#portfolio .heading{
+	padding-bottom: 30px;
+}
+	
+
+.container .imgBox img{
+	width: 375px;
+	height: 300px;
+	margin: 2px;
+	
+	}
+.container .imgBox{
+	transition: transform 3s;
+}
+.imgBox img:hover{
+	transform: scale(1.01);
+	opacity: 0.95;
+}
